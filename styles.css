@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: #75e2e6;
+  border-bottom: 1px solid blue;
+}
+
+h3 {
+  color: #000;
+  text-align: right;
+}
+
+header {
+  background-color: black;
+}
+
+.dog-name-column {
+  text-align: center;
+}
+
+h1,
+label {
+  color: #fff;
+  font-weight: 200;
+}
+
+.some-dogs {
+  font-weight: 800;
+}
+
+ .name-this-dog-button {
+  background-color: #75e2e6;
+}
+
+/* look up border radius */
