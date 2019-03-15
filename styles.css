@@ -4,6 +4,9 @@
 
 body {
   border: 2px solid black;
+  margin: 10px;
+  font-family:"Open Sans";
+  width: 100%
 }
 
 nav {
@@ -13,12 +16,6 @@ nav {
   padding: 10px;
 }
 
-.section2 p{
-  text-align: left;
-  font-size: 23px;
-  width: 360px;
-  margin-left: -50px;
-}
 
 .dog-icon{
 width: 4%;
@@ -43,23 +40,12 @@ h3 {
 
 h2{
   font-size: 30px;
+  text-align: center;
 }
 
 .site-name{
   padding-top: 30px;
   font-size: 40px;
-}
-
-.dog1{
-  border-radius: 50%;
-  border: 5px solid #048EAA;
-  width: 17%;
-}
-
-.dog{
-  border-radius: 50%;
-  border: 5px solid #048EAA;
-  width: 95%;
 }
 
 header {
@@ -109,61 +95,47 @@ h1 {
   font-weight: 800;
 }
 
+.section2 p{
+  text-align: left;
+  font-size: 23px;
+  width: 360px;
+  /* the two lines of code below make all text
+   boxes push down if even one text is longer than the rest */
+  height: 260px;
+  display: inline-flex;
+}
+
 .section2{
   text-align: center;
 }
 
-.how-to-dog{
+.dog-column{
+  width: 30%;
   display: inline-block;
-  width: 250px;
-  margin-right: 125px;
-  margin-left: 50px;
+  text-align: center;
+  min-width: 30%;
 }
 
-.what-is-dogs{
-  width: 250px;
-  display: inline-block;
-  margin-right: 100px;
-  margin-left: 100px;
+.dog-column-center{
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
-.facts-from-dogs{
-  display: inline-block;
-  width: 250px;
-  margin-right: 50px;
-  margin-left: 125px;
+
+.dog{
+  border-radius: 50%;
+  border: 5px solid #048EAA;
+  width: 235px;
 }
 
-.infohow {
- background-color: #048eaa;
- display: inline-block;
- width: 360px;
- height: 60px;
- margin: 30px;
-}
-
-.infowhat{
-  background-color: #048eaa;
-  display: inline-block;
-  width: 360px;
-  height: 60px;
-  margin: 30px;
-  margin-right: 85px;
-  margin-left: 85px;
-}
-
-.infofacts{
-  background-color: #048eaa;
-  display: inline-block;
-  width: 360px;
-  height: 60px;
-  margin: 30px;
-}
-
-.bottom-buttons button{
+.buttons {
   color: white;
   font-size: 20px;
-  margin-bottom: 0px;
+  margin: 10px;
+  background-color: #048eaa;
+  width: 360px;
+  height: 60px;
+  /* float: left; */
 }
 
 footer {
