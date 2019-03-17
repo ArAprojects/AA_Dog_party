@@ -5,21 +5,24 @@
 body {
   border: 2px solid black;
   margin: 10px;
-  font-family:"Open Sans";
-  width: 100%
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
 }
 
 nav {
   background-color: #75e2e6;
   border-bottom: 3px solid #048EAA;
   text-align: left;
+  display: inline-block
   padding: 10px;
+  width: 100%
 }
 
 
 .dog-icon{
-width: 4%;
+width: 60px;
 display: inline-block;
+padding: 3px;
 }
 
 .menu-options{
@@ -31,25 +34,26 @@ display: inline-block;
 h3 {
   color: #000;
   display: inline-block;
-  margin: 10px;
+  margin-bottom: 8px;
+  margin-top: 8px;
   font-size: 23px;
-  font-family: sans-serif;
-  font-weight: normal;
-  padding-right: 8px;
+  font-weight: 600;
+  margin-right: 15px;
 }
 
 h2{
-  font-size: 30px;
+  font-size: 26px;
   text-align: center;
+  font-weight: 800;
 }
 
 .site-name{
-  padding-top: 30px;
   font-size: 40px;
+
 }
 
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/park.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/park.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,6 +65,7 @@ header {
 
 .input-and-text{
   display: inline-block;
+  width: 450px;
   padding-bottom: 30px;
   padding-top: 10px;
 }
@@ -74,14 +79,14 @@ header {
 
 .button-input{
   margin-bottom: 25px;
-  width: 450px;
+  width: 100%;
   height: 60px;
 }
 
 .name-this-dog-button {
  background-color: #75e2e6;
  display: inline-block;
- width: 450px;
+ width: 100%;
  height: 60px;
  font-size: 20px;
 }
@@ -95,57 +100,59 @@ h1 {
   font-weight: 800;
 }
 
-.section2 p{
+.section2 p {
   text-align: left;
-  font-size: 23px;
-  width: 360px;
-  /* the two lines of code below make all text
-   boxes push down if even one text is longer than the rest */
-  height: 260px;
-  display: inline-flex;
-}
-
-.section2{
-  text-align: center;
-}
-
-.dog-column{
-  width: 30%;
+  font-size: 20px;
+  font-weight: 600;
+  width: 85%;
+  height: 265px;
   display: inline-block;
+  overflow: scroll;
+}
+
+.section2 {
   text-align: center;
-  min-width: 30%;
 }
 
-.dog-column-center{
-  margin-left: 3%;
-  margin-right: 3%;
+.dog-column {
+  width: 380px;
+  display: inline-block;
+
 }
 
 
-.dog{
+
+.dog {
+  border-radius: 50%;
+  border: 5px solid #048EAA;
+  width: 55%;
+}
+
+.dog-one {
   border-radius: 50%;
   border: 5px solid #048EAA;
   width: 235px;
-}
+  }
 
 .buttons {
   color: white;
   font-size: 20px;
   margin: 10px;
+  margin-bottom: 25px;
   background-color: #048eaa;
-  width: 360px;
+  width: 85%;
   height: 60px;
-  /* float: left; */
+
 }
 
 footer {
   background-color: #048eaa;
-  margin-top: 50px;
+  margin-top: 40px;
   text-align: center;
 }
 
 
-.info-text{
+.info-text {
   color: white;
   padding-top: 40px;
   font-size: 24px;
@@ -154,4 +161,59 @@ footer {
 .social-media-links img{
   margin: 15px;
   margin-bottom: 60px;
+}
+
+/* ----------------------------------------- */
+@media screen and (max-width: 800px) {
+  article {
+    max-width: 300px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .site-name {
+    font-size: 1.5em;
+  }
+
+  .dog-icon {
+    width: 50px;
+  }
+
+  .input-and-text {
+  width: 60%
+  }
+
+  .dog-one {
+    width: 175px;
+  }
+
+  .button-input {
+    height: 45px;
+  }
+
+  .name-this-dog-button {
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+h3{
+  font-size: .7em;
+}
+
+.dog-icon {
+  width: 35px;
+}
+
+.dog-one {
+  width: 145px;
+}
+
+.site-name{
+  font-size: 1.5em;
+}
+.social-media-links img {
+  width: 40px;
 }
