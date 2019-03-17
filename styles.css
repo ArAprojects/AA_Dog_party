@@ -70,6 +70,10 @@ header {
   padding-top: 10px;
 }
 
+Input {
+font-size: 20px;
+}
+
 .name{
   text-align: left;
   color: white;
