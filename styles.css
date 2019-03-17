@@ -4,7 +4,7 @@
 
 body {
   border: 2px solid black;
-  margin: 10px;
+  /* margin: 10px; */
   font-family: 'Open Sans', sans-serif;
   width: 100%;
 }
