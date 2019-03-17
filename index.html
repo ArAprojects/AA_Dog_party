@@ -18,17 +18,18 @@
       </div>
     </nav>
     <section class="first-section">
-      <h1 class="site-name">A Site About <span class="some-dogs">Some Dogs</span> </h1>
+      <h1 class="site-name">A Site About <span id="span-id" class="some-dogs">Some Dogs</span> </h1>
        <div class="first-picture-and-heading">
          <img class="dog-one" src="images/dog1-sq.jpg" alt="small-brown-dog-with-teal-bandanna">
        </div>
        <div class="input-and-text">
          <p class="name">Name</p>
-        <input id="name" class="button-input" action="index.html" method="post"></input>
+        <input maxlength="10" type="text" id="userInput" class="button-input" action="index.html" method="post"></input>
         <br>
-        <button class="name-this-dog-button" type="button" name="button">Name This Dog</button>
+        <button onclick="myFunction()" class="name-this-dog-button" type="button" name="button">Name This Dog</button>
       </div>
     </section>
+
 </header>
     <section class="section2">
       <article class="dog-column dog-column-left">
@@ -71,6 +72,6 @@
         <img src="images/linkedin.svg" alt="linkedin-icon">
       </div>
     </footer>
-<script type="text/javascript" href="main.js"></script>
+<script src="main.js"></script>
   </body>
 </html>
